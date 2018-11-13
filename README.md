@@ -42,6 +42,12 @@ You can embed Slot interface implementation into your class, thus make it safe t
                 
         A() : Changeable(signal) {}
     };
+    
+    
+int main() {
+    signal.emit(&Changeable::added);
+    signal.emit(&Changeable::deleted, 2, i);
+}    
 ```
 
 
