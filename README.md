@@ -72,7 +72,8 @@ Alternative ussage (A probably unmovable now [due to "captured" self]):
                           << std::to_string(i2)
                           << std::endl;
             }
-
+            
+            using SlotBase::disconnect;     // allow disconnect from outside          
         } slot {nullptr};
         
         A(){
